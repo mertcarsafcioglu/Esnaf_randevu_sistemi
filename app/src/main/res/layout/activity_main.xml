@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lacivert"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/esnaf" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="esnaf"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Randevu"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="50dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/randevu_olustur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_design_orange"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Randevu Oluştur"
+            android:textColor="@color/lacivert"
+            android:onClick="buton_click"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/esnaf_kayit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_design_transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Esnaf Kayıt Ol"
+            android:textColor="@color/white"
+            android:onClick="buton_click"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/esnaf_giris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design_white"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Esnaf Giriş Yap"
+            android:textColor="@color/lacivert"
+            android:onClick="buton_click"/>
+    </LinearLayout>
+
+</LinearLayout>
